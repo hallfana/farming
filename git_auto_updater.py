@@ -14,6 +14,7 @@ def git_operations():
     current_datetime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     commands = [
+	'cd /root/farming',
         'git add .',
         f'git commit -m "auto update {current_datetime}"',
         'git push --force'
